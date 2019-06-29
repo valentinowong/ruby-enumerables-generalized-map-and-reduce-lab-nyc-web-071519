@@ -12,8 +12,10 @@ end
 def reduce(source_array, starting_point=nil)
   if starting_point
     memo = starting_point
+    i = 0
   else
     memo = source_array[0]
+    i = 1
   end
   source_array.each do |n|
     memo = yield(memo,n)
