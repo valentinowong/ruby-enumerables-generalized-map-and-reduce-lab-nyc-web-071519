@@ -17,7 +17,7 @@ def reduce(source_array, starting_point=nil)
     memo = source_array[0]
     i = 1
   end
-  source_array.each do |n|
+  while i < source_array.length do
     memo = yield(memo,n)
   end
   memo
