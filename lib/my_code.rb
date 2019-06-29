@@ -19,6 +19,7 @@ def reduce(source_array, starting_point=nil)
   end
   while i < source_array.length do
     memo = yield(memo,n)
+    i += 1
   end
   memo
 end
